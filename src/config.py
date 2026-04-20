@@ -9,16 +9,18 @@ load_dotenv()
 
 # CDC Data Sources - these are free public APIs
 CDC_DATASETS = {
-    "heart_disease": "https://data.cdc.gov/resource/i2vk-mgdh.json",
-    "diabetes": "https://data.cdc.gov/resource/t8re-hy3w.json",
-    "obesity": "https://data.cdc.gov/resource/hn4x-zwk7.json"
+    "obesity": "https://data.cdc.gov/resource/hn4x-zwk7.json",
+    "nutrition": "https://data.cdc.gov/resource/pj7h-gcxc.json",
+    "chronic_disease": "https://data.cdc.gov/resource/g4ie-h725.json"
 }
 
 # How many records to fetch per API call
 BATCH_SIZE = 1000
 
 # Where to save raw data on our laptop
-RAW_DATA_PATH = "data/raw/"
+# Build absolute path so scripts work from any directory
+_PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW_DATA_PATH = os.path.join(_PROJECT_ROOT, "data", "raw") + "/"
 
 # Alert thresholds for data quality
 QUALITY_THRESHOLDS = {
