@@ -1,0 +1,3 @@
+@echo off
+C:\Users\snehi\Documents\projects\pulsecheck\venv_dbt\Scripts\dbt.exe run --project-dir C:\Users\snehi\Documents\projects\pulsecheck\pulsecheck_dbt --profiles-dir C:\Users\snehi\.dbt >> C:\Users\snehi\Documents\projects\pulsecheck\logs\dbt_run.log 2>&1
+C:\Users\snehi\Documents\projects\pulsecheck\venv_dbt\Scripts\dbt.exe test --project-dir C:\Users\snehi\Documents\projects\pulsecheck\pulsecheck_dbt --profiles-dir C:\Users\snehi\.dbt >> C:\Users\snehi\Documents\projects\pulsecheck\logs\dbt_run.log 2>&1

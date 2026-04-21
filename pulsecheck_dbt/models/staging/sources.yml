@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: PULSECHECK_DB
+    schema: RAW_DATA
+    tables:
+      - name: RAW_OBESITY
+        description: "Raw CDC obesity data fetched from public API"

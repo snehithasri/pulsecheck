@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: fct_obesity_trends
+    description: "Obesity prevalence aggregated by year, state, and demographics"
+    columns:
+      - name: avg_prevalence
+        tests:
+          - not_null
+      - name: state_code
+        tests:
+          - not_null
+      - name: year_start
+        tests:
+          - not_null
